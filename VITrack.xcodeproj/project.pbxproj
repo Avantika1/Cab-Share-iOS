@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4D884BED59328E551C44DC /* Pods_VITrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6065848EE1D940917EB19AFA /* Pods_VITrackUITests.framework */; };
+		871343601E387D0200EDDC4B /* poolRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713435F1E387D0200EDDC4B /* poolRequestCell.swift */; };
+		871343621E39DF5C00EDDC4B /* aboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871343611E39DF5C00EDDC4B /* aboutUsViewController.swift */; };
+		871343641E39E22E00EDDC4B /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871343631E39E22E00EDDC4B /* settingsViewController.swift */; };
+		873986A61D90511600AFBEB0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873986A51D90511600AFBEB0 /* SWRevealViewController.m */; };
+		873986A81D90518F00AFBEB0 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873986A71D90518F00AFBEB0 /* menuViewController.swift */; };
+		873986AA1D90522D00AFBEB0 /* menuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873986A91D90522C00AFBEB0 /* menuTableViewController.swift */; };
+		875DEC851D4A78B9008F9B15 /* locationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875DEC841D4A78B9008F9B15 /* locationDetails.swift */; };
+		875DEC871D4A7B38008F9B15 /* locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 875DEC861D4A7B38008F9B15 /* locations.plist */; };
+		87722DE01D9112D500844150 /* secondOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87722DDF1D9112D500844150 /* secondOptionViewController.swift */; };
+		87722DE21D91136600844150 /* thirdOptionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87722DE11D91136600844150 /* thirdOptionMenuViewController.swift */; };
+		87A70C221E351A260062755A /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A70C211E351A260062755A /* PageItemController.swift */; };
+		87A70C241E351EB00062755A /* parentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A70C231E351EB00062755A /* parentViewController.swift */; };
+		87A70C261E367C350062755A /* fourthOptionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A70C251E367C350062755A /* fourthOptionMenuViewController.swift */; };
+		87AE0ACD1E3FC3700019C1CE /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE0ACC1E3FC3700019C1CE /* loginViewController.swift */; };
+		87AE0ACF1E40F67D0019C1CE /* allTravellersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE0ACE1E40F67D0019C1CE /* allTravellersViewController.swift */; };
+		87B645771D526D5B00EDD356 /* trackDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B645761D526D5B00EDD356 /* trackDetailsCell.swift */; };
+		87F429C71E35127B00CB3415 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F429C61E35127A00CB3415 /* logo.png */; };
 		87F8F67C1D44CBCF00AF8065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F67B1D44CBCF00AF8065 /* AppDelegate.swift */; };
 		87F8F67E1D44CBCF00AF8065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F67D1D44CBCF00AF8065 /* ViewController.swift */; };
 		87F8F6811D44CBCF00AF8065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F67F1D44CBCF00AF8065 /* Main.storyboard */; };
@@ -14,6 +32,8 @@
 		87F8F6861D44CBCF00AF8065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F8F6841D44CBCF00AF8065 /* LaunchScreen.storyboard */; };
 		87F8F6911D44CBD000AF8065 /* VITrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F6901D44CBD000AF8065 /* VITrackTests.swift */; };
 		87F8F69C1D44CBD000AF8065 /* VITrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F69B1D44CBD000AF8065 /* VITrackUITests.swift */; };
+		8B3B24DAC81786CD5BF9F8A2 /* Pods_VITrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB4C1C3154A3070DAB386A2 /* Pods_VITrack.framework */; };
+		CCC3D243927F335255DAC2A6 /* Pods_VITrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0B25462AB7FE88630E8BF1 /* Pods_VITrackTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +54,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0B25462AB7FE88630E8BF1 /* Pods_VITrackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VITrackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B63E6FA652C49E9A92BBAD8 /* Pods-VITrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VITrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VITrack/Pods-VITrack.debug.xcconfig"; sourceTree = "<group>"; };
+		6065848EE1D940917EB19AFA /* Pods_VITrackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VITrackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C30664474FDB35B5CD3793 /* Pods-VITrackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VITrackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VITrackUITests/Pods-VITrackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8713435F1E387D0200EDDC4B /* poolRequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = poolRequestCell.swift; sourceTree = "<group>"; };
+		871343611E39DF5C00EDDC4B /* aboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutUsViewController.swift; sourceTree = "<group>"; };
+		871343631E39E22E00EDDC4B /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		873986A31D90511500AFBEB0 /* VITrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VITrack-Bridging-Header.h"; sourceTree = "<group>"; };
+		873986A41D90511600AFBEB0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		873986A51D90511600AFBEB0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		873986A71D90518F00AFBEB0 /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		873986A91D90522C00AFBEB0 /* menuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableViewController.swift; sourceTree = "<group>"; };
+		875DEC841D4A78B9008F9B15 /* locationDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationDetails.swift; sourceTree = "<group>"; };
+		875DEC861D4A7B38008F9B15 /* locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locations.plist; sourceTree = "<group>"; };
+		87722DDF1D9112D500844150 /* secondOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondOptionViewController.swift; sourceTree = "<group>"; };
+		87722DE11D91136600844150 /* thirdOptionMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdOptionMenuViewController.swift; sourceTree = "<group>"; };
+		87A70C211E351A260062755A /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		87A70C231E351EB00062755A /* parentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parentViewController.swift; sourceTree = "<group>"; };
+		87A70C251E367C350062755A /* fourthOptionMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = fourthOptionMenuViewController.swift; path = ../fourthOptionMenuViewController.swift; sourceTree = "<group>"; };
+		87AE0ACC1E3FC3700019C1CE /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		87AE0ACE1E40F67D0019C1CE /* allTravellersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allTravellersViewController.swift; sourceTree = "<group>"; };
+		87B645761D526D5B00EDD356 /* trackDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trackDetailsCell.swift; sourceTree = "<group>"; };
+		87F429C61E35127A00CB3415 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		87F8F6781D44CBCF00AF8065 /* VITrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VITrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F8F67B1D44CBCF00AF8065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F8F67D1D44CBCF00AF8065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +90,11 @@
 		87F8F6971D44CBD000AF8065 /* VITrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VITrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F8F69B1D44CBD000AF8065 /* VITrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VITrackUITests.swift; sourceTree = "<group>"; };
 		87F8F69D1D44CBD000AF8065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBCA051A7B92A789606DAE45 /* Pods-VITrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VITrackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VITrackTests/Pods-VITrackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3CC9A38207560D239FC827F /* Pods-VITrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VITrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VITrackTests/Pods-VITrackTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD6AC850AF993BDFDD6F0A9C /* Pods-VITrackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VITrackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VITrackUITests/Pods-VITrackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E15D0D105F38A2125D210188 /* Pods-VITrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VITrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-VITrack/Pods-VITrack.release.xcconfig"; sourceTree = "<group>"; };
+		FEB4C1C3154A3070DAB386A2 /* Pods_VITrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VITrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3B24DAC81786CD5BF9F8A2 /* Pods_VITrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC3D243927F335255DAC2A6 /* Pods_VITrackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +118,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4D884BED59328E551C44DC /* Pods_VITrackUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		873986A21D90504100AFBEB0 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				873986A41D90511600AFBEB0 /* SWRevealViewController.h */,
+				873986A51D90511600AFBEB0 /* SWRevealViewController.m */,
+				873986A31D90511500AFBEB0 /* VITrack-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		87601A2C1E3FA75B0025CF36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEB4C1C3154A3070DAB386A2 /* Pods_VITrack.framework */,
+				0C0B25462AB7FE88630E8BF1 /* Pods_VITrackTests.framework */,
+				6065848EE1D940917EB19AFA /* Pods_VITrackUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87F8F66F1D44CBCF00AF8065 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +152,8 @@
 				87F8F68F1D44CBD000AF8065 /* VITrackTests */,
 				87F8F69A1D44CBD000AF8065 /* VITrackUITests */,
 				87F8F6791D44CBCF00AF8065 /* Products */,
+				87601A2C1E3FA75B0025CF36 /* Frameworks */,
+				DEA4C4C649A3A64C0F28BFF0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +174,25 @@
 				87F8F67D1D44CBCF00AF8065 /* ViewController.swift */,
 				87F8F67F1D44CBCF00AF8065 /* Main.storyboard */,
 				87F8F6821D44CBCF00AF8065 /* Assets.xcassets */,
+				87F429C61E35127A00CB3415 /* logo.png */,
 				87F8F6841D44CBCF00AF8065 /* LaunchScreen.storyboard */,
 				87F8F6871D44CBCF00AF8065 /* Info.plist */,
+				875DEC861D4A7B38008F9B15 /* locations.plist */,
+				875DEC841D4A78B9008F9B15 /* locationDetails.swift */,
+				87B645761D526D5B00EDD356 /* trackDetailsCell.swift */,
+				873986A21D90504100AFBEB0 /* SWRevealViewController */,
+				873986A71D90518F00AFBEB0 /* menuViewController.swift */,
+				873986A91D90522C00AFBEB0 /* menuTableViewController.swift */,
+				87722DDF1D9112D500844150 /* secondOptionViewController.swift */,
+				87722DE11D91136600844150 /* thirdOptionMenuViewController.swift */,
+				87A70C251E367C350062755A /* fourthOptionMenuViewController.swift */,
+				871343611E39DF5C00EDDC4B /* aboutUsViewController.swift */,
+				871343631E39E22E00EDDC4B /* settingsViewController.swift */,
+				87A70C211E351A260062755A /* PageItemController.swift */,
+				87A70C231E351EB00062755A /* parentViewController.swift */,
+				8713435F1E387D0200EDDC4B /* poolRequestCell.swift */,
+				87AE0ACC1E3FC3700019C1CE /* loginViewController.swift */,
+				87AE0ACE1E40F67D0019C1CE /* allTravellersViewController.swift */,
 			);
 			path = VITrack;
 			sourceTree = "<group>";
@@ -125,6 +215,19 @@
 			path = VITrackUITests;
 			sourceTree = "<group>";
 		};
+		DEA4C4C649A3A64C0F28BFF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B63E6FA652C49E9A92BBAD8 /* Pods-VITrack.debug.xcconfig */,
+				E15D0D105F38A2125D210188 /* Pods-VITrack.release.xcconfig */,
+				BBCA051A7B92A789606DAE45 /* Pods-VITrackTests.debug.xcconfig */,
+				C3CC9A38207560D239FC827F /* Pods-VITrackTests.release.xcconfig */,
+				CD6AC850AF993BDFDD6F0A9C /* Pods-VITrackUITests.debug.xcconfig */,
+				62C30664474FDB35B5CD3793 /* Pods-VITrackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87F8F6A01D44CBD000AF8065 /* Build configuration list for PBXNativeTarget "VITrack" */;
 			buildPhases = (
+				163AB0C0FBE5A7168D4B823B /* [CP] Check Pods Manifest.lock */,
 				87F8F6741D44CBCF00AF8065 /* Sources */,
 				87F8F6751D44CBCF00AF8065 /* Frameworks */,
 				87F8F6761D44CBCF00AF8065 /* Resources */,
+				355519255FC4DC9056080DAE /* [CP] Embed Pods Frameworks */,
+				567D0212409E033E7725FD18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87F8F6A31D44CBD000AF8065 /* Build configuration list for PBXNativeTarget "VITrackTests" */;
 			buildPhases = (
+				9E5871E50D375ED2AC566882 /* [CP] Check Pods Manifest.lock */,
 				87F8F6881D44CBD000AF8065 /* Sources */,
 				87F8F6891D44CBD000AF8065 /* Frameworks */,
 				87F8F68A1D44CBD000AF8065 /* Resources */,
+				503491126230148E44E33101 /* [CP] Embed Pods Frameworks */,
+				6812339C1BCAB652619F27F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87F8F6A61D44CBD000AF8065 /* Build configuration list for PBXNativeTarget "VITrackUITests" */;
 			buildPhases = (
+				FF6D5C472A4D832FE73A43B8 /* [CP] Check Pods Manifest.lock */,
 				87F8F6931D44CBD000AF8065 /* Sources */,
 				87F8F6941D44CBD000AF8065 /* Frameworks */,
 				87F8F6951D44CBD000AF8065 /* Resources */,
+				086F55B49F9A37F822427E9E /* [CP] Copy Pods Resources */,
+				65223B9F1AB87AAEF2870BB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,18 +300,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = avantika;
 				TargetAttributes = {
 					87F8F6771D44CBCF00AF8065 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 57XN54B8AU;
+						LastSwiftMigration = 0820;
 					};
 					87F8F68B1D44CBD000AF8065 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 87F8F6771D44CBCF00AF8065;
 					};
 					87F8F6961D44CBD000AF8065 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 87F8F6771D44CBCF00AF8065;
 					};
 				};
@@ -230,6 +346,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F8F6861D44CBCF00AF8065 /* LaunchScreen.storyboard in Resources */,
+				87F429C71E35127B00CB3415 /* logo.png in Resources */,
+				875DEC871D4A7B38008F9B15 /* locations.plist in Resources */,
 				87F8F6831D44CBCF00AF8065 /* Assets.xcassets in Resources */,
 				87F8F6811D44CBCF00AF8065 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +369,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		086F55B49F9A37F822427E9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VITrackUITests/Pods-VITrackUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		163AB0C0FBE5A7168D4B823B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		355519255FC4DC9056080DAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VITrack/Pods-VITrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		503491126230148E44E33101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VITrackTests/Pods-VITrackTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567D0212409E033E7725FD18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VITrack/Pods-VITrack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65223B9F1AB87AAEF2870BB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VITrackUITests/Pods-VITrackUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6812339C1BCAB652619F27F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VITrackTests/Pods-VITrackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5871E50D375ED2AC566882 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6D5C472A4D832FE73A43B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87F8F6741D44CBCF00AF8065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B645771D526D5B00EDD356 /* trackDetailsCell.swift in Sources */,
+				875DEC851D4A78B9008F9B15 /* locationDetails.swift in Sources */,
+				87AE0ACF1E40F67D0019C1CE /* allTravellersViewController.swift in Sources */,
+				871343621E39DF5C00EDDC4B /* aboutUsViewController.swift in Sources */,
+				87722DE21D91136600844150 /* thirdOptionMenuViewController.swift in Sources */,
+				873986A61D90511600AFBEB0 /* SWRevealViewController.m in Sources */,
+				871343641E39E22E00EDDC4B /* settingsViewController.swift in Sources */,
+				873986A81D90518F00AFBEB0 /* menuViewController.swift in Sources */,
+				873986AA1D90522D00AFBEB0 /* menuTableViewController.swift in Sources */,
 				87F8F67E1D44CBCF00AF8065 /* ViewController.swift in Sources */,
+				87A70C241E351EB00062755A /* parentViewController.swift in Sources */,
+				87A70C261E367C350062755A /* fourthOptionMenuViewController.swift in Sources */,
+				87A70C221E351A260062755A /* PageItemController.swift in Sources */,
+				87AE0ACD1E3FC3700019C1CE /* loginViewController.swift in Sources */,
+				87722DE01D9112D500844150 /* secondOptionViewController.swift in Sources */,
 				87F8F67C1D44CBCF00AF8065 /* AppDelegate.swift in Sources */,
+				871343601E387D0200EDDC4B /* poolRequestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +597,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -335,6 +608,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -371,8 +645,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -380,6 +656,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -391,74 +668,102 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		87F8F6A11D44CBD000AF8065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B63E6FA652C49E9A92BBAD8 /* Pods-VITrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 57XN54B8AU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = VITrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VITrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vit.VITrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VITrack/VITrack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		87F8F6A21D44CBD000AF8065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15D0D105F38A2125D210188 /* Pods-VITrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 57XN54B8AU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = VITrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VITrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vit.VITrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VITrack/VITrack-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		87F8F6A41D44CBD000AF8065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCA051A7B92A789606DAE45 /* Pods-VITrackTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VITrackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.VITrackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VITrack.app/VITrack";
 			};
 			name = Debug;
 		};
 		87F8F6A51D44CBD000AF8065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3CC9A38207560D239FC827F /* Pods-VITrackTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VITrackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.VITrackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VITrack.app/VITrack";
 			};
 			name = Release;
 		};
 		87F8F6A71D44CBD000AF8065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6AC850AF993BDFDD6F0A9C /* Pods-VITrackUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = VITrackUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.VITrackUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = VITrack;
 			};
 			name = Debug;
 		};
 		87F8F6A81D44CBD000AF8065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C30664474FDB35B5CD3793 /* Pods-VITrackUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = VITrackUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.VITrackUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = VITrack;
 			};
 			name = Release;
@@ -482,6 +787,7 @@
 				87F8F6A21D44CBD000AF8065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87F8F6A31D44CBD000AF8065 /* Build configuration list for PBXNativeTarget "VITrackTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +796,7 @@
 				87F8F6A51D44CBD000AF8065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87F8F6A61D44CBD000AF8065 /* Build configuration list for PBXNativeTarget "VITrackUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +805,7 @@
 				87F8F6A81D44CBD000AF8065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
