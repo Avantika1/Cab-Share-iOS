@@ -813,9 +813,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbN-RV-pPX">
-                                <rect key="frame" x="164" y="200" width="46" height="73"/>
+                                <rect key="frame" x="68" y="201" width="240" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="facebooklogin"/>
                                 <connections>
                                     <action selector="fbLogin:" destination="iMK-be-PnO" eventType="touchUpInside" id="2nY-c8-Rds"/>
                                 </connections>
@@ -1560,6 +1560,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebooklogin" width="408" height="90"/>
         <image name="logo.png" width="310" height="240"/>
         <image name="menu" width="22" height="22"/>
     </resources>
@@ -1570,6 +1571,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="KHT-fw-JVz"/>
-        <segue reference="5TC-sX-tOW"/>
+        <segue reference="D55-p8-Mb5"/>
     </inferredMetricsTieBreakers>
 </document>
