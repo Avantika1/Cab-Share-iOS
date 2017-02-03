@@ -803,7 +803,7 @@
         <!--Login View Controller-->
         <scene sceneID="ZUC-SY-QdX">
             <objects>
-                <viewController id="iMK-be-PnO" customClass="loginViewController" customModule="VITrack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="iMK-be-PnO" customClass="loginViewController" customModule="VITrack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g5f-Hv-Zdz"/>
                         <viewControllerLayoutGuide type="bottom" id="EAt-Hx-KC1"/>
@@ -818,6 +818,19 @@
                                 <state key="normal" backgroundImage="facebooklogin"/>
                                 <connections>
                                     <action selector="fbLogin:" destination="iMK-be-PnO" eventType="touchUpInside" id="2nY-c8-Rds"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-1B-QPX" customClass="GIDSignInButton">
+                                <rect key="frame" x="68" y="311" width="240" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maR-qJ-bxo">
+                                <rect key="frame" x="164" y="428" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="skipLogin:" destination="iMK-be-PnO" eventType="touchUpInside" id="V60-hx-d8u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1083,7 +1096,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hiX-21-cPT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iG7-jh-Hbb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iG7-jh-Hbb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1239,7 +1252,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No.of travellers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mw9-xC-mbN">
-                                <rect key="frame" x="16" y="304" width="119.5" height="30"/>
+                                <rect key="frame" x="16" y="304" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1252,7 +1265,7 @@
                                 <state key="normal" title="Time of travel"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick up location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mb3-Bb-j51">
-                                <rect key="frame" x="235.5" y="304" width="123.5" height="30"/>
+                                <rect key="frame" x="235" y="304" width="124" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1281,7 +1294,7 @@
                                 <state key="normal" title="To"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-we-gb9">
-                                <rect key="frame" x="27.5" y="64" width="320" height="82"/>
+                                <rect key="frame" x="28" y="64" width="320" height="82"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="5Ls-S2-3FX"/>
@@ -1345,7 +1358,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3YC-uy-lW9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yEv-ZF-HRQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="yEv-ZF-HRQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1371,14 +1384,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qo2-e2-lZP">
-                                <rect key="frame" x="67.5" y="86" width="240" height="128"/>
+                                <rect key="frame" x="68" y="86" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="1KW-DP-hYL"/>
                                     <constraint firstAttribute="width" constant="240" id="b6X-uv-Vp1"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-7c-Ec9">
-                                <rect key="frame" x="67.5" y="234" width="240" height="102"/>
+                                <rect key="frame" x="68" y="234" width="240" height="102"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="BBD-LS-bwF"/>
@@ -1389,7 +1402,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The team:                " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mpT-Cl-5kA">
-                                <rect key="frame" x="67.5" y="356" width="240" height="109"/>
+                                <rect key="frame" x="68" y="356" width="240" height="109"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="109" id="2rL-b3-Zsn"/>
@@ -1425,7 +1438,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vyu-Y3-psi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HHu-qk-hWg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HHu-qk-hWg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1509,7 +1522,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rdd-VU-dwE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EXf-6Z-3oc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EXf-6Z-3oc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1527,7 +1540,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7dD-Mg-JmV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gAJ-Yt-bxE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gAJ-Yt-bxE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1545,7 +1558,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VUv-eR-V73" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VCY-fI-xdM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VCY-fI-xdM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1570,7 +1583,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="KHT-fw-JVz"/>
+        <segue reference="TGv-Bi-5rQ"/>
         <segue reference="D55-p8-Mb5"/>
     </inferredMetricsTieBreakers>
 </document>

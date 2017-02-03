@@ -12,22 +12,15 @@ import FacebookLogin
 import FacebookCore
 
 
-class loginViewController: UIViewController{
+class loginViewController: UIViewController, GIDSignInUIDelegate {
     
- /*   struct MyProfileRequest: GraphRequestProtocol {
-        struct Response: GraphResponseProtocol {
-            init(rawResponse: Any?) {
-                // Decode JSON from rawResponse into other properties here.
-            }
-        }
-        
-        var graphPath = "/me"
-        var parameters: [String : Any]? = ["fields": "id, name"]
-        var accessToken = AccessToken.current
-        var httpMethod: GraphRequestHTTPMethod = .GET
-        var apiVersion: GraphAPIVersion = .defaultVersion
-    }*/
     
+    @IBAction func skipLogin(_ sender: Any) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RevealViewController") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
+    }
+
+ 
     @IBAction func fbLogin(_ sender: Any) {
         let loginManager = LoginManager()
         loginManager.logIn([ ReadPermission.publicProfile ], viewController: self) { result in
@@ -35,8 +28,22 @@ class loginViewController: UIViewController{
         }
     }
     
+    func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
+        //myActivityIndicator.stopAnimating()
+    }
+    
+    func sign(_ signIn: GIDSignIn!,
+              present viewController: UIViewController!) {
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    func sign(_ signIn: GIDSignIn!,
+              dismiss viewController: UIViewController!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     func loginManagerDidComplete(_ result: LoginResult) {
-        print(1111111)
         switch result {
         case .cancelled:
             print(123)
@@ -71,6 +78,7 @@ class loginViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         GIDSignIn.sharedInstance().uiDelegate = self
         if let accessToken = AccessToken.current {
             // User is logged in, use 'accessToken' here.
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RevealViewController") as UIViewController
@@ -78,6 +86,7 @@ class loginViewController: UIViewController{
             
             self.present(viewController, animated: false, completion: nil)
         }
+        
     }
     
   

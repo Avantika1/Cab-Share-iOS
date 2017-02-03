@@ -251,15 +251,19 @@ class allTravellersViewController: UIViewController {
         dateCopy = []
         fromCopy = []
         toCopy = []
-       
+       print(selectedDate,date[0])
+        print(selectedDate.characters.count, date[0].characters.count)
+        
         for i in 0...self.from.count-1
         {
-            if(selectedDate == self.date[i] && toButton.titleLabel?.text == self.from[i] && fromButton.titleLabel?.text == self.to[i])
+         
+            if(selectedDate == self.date[i] && toButton.titleLabel?.text == self.to[i] && fromButton.titleLabel?.text == self.from[i])
             {
                 dateCopy.append(self.date[i])
                 fromCopy.append(self.from[i])
                 toCopy.append(self.to[i])
             }
+        
         }
          flag = 1
         allTravellersTableView.reloadData()

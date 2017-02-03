@@ -25,9 +25,14 @@ class menuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 2 && indexPath.row == 1{
+            
+            GIDSignIn.sharedInstance().signOut()
                 let loginManager = LoginManager()
                 loginManager.logOut()
-            self.dismiss(animated: true, completion: nil)
+           // self.dismiss(animated: true, completion: nil)
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as UIViewController
+            self.present(viewController, animated: false, completion: nil)
+
         }
     }
 

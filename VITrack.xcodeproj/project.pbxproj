@@ -23,6 +23,9 @@
 		87A70C261E367C350062755A /* fourthOptionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A70C251E367C350062755A /* fourthOptionMenuViewController.swift */; };
 		87AE0ACD1E3FC3700019C1CE /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE0ACC1E3FC3700019C1CE /* loginViewController.swift */; };
 		87AE0ACF1E40F67D0019C1CE /* allTravellersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE0ACE1E40F67D0019C1CE /* allTravellersViewController.swift */; };
+		87AE0AF51E4304800019C1CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87AE0AF41E4304800019C1CE /* GoogleService-Info.plist */; };
+		87AE0AF61E4304800019C1CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87AE0AF41E4304800019C1CE /* GoogleService-Info.plist */; };
+		87AE0AF71E4304800019C1CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87AE0AF41E4304800019C1CE /* GoogleService-Info.plist */; };
 		87B645771D526D5B00EDD356 /* trackDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B645761D526D5B00EDD356 /* trackDetailsCell.swift */; };
 		87F429C71E35127B00CB3415 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 87F429C61E35127A00CB3415 /* logo.png */; };
 		87F8F67C1D44CBCF00AF8065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8F67B1D44CBCF00AF8065 /* AppDelegate.swift */; };
@@ -75,6 +78,7 @@
 		87A70C251E367C350062755A /* fourthOptionMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = fourthOptionMenuViewController.swift; path = ../fourthOptionMenuViewController.swift; sourceTree = "<group>"; };
 		87AE0ACC1E3FC3700019C1CE /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		87AE0ACE1E40F67D0019C1CE /* allTravellersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allTravellersViewController.swift; sourceTree = "<group>"; };
+		87AE0AF41E4304800019C1CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87B645761D526D5B00EDD356 /* trackDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trackDetailsCell.swift; sourceTree = "<group>"; };
 		87F429C61E35127A00CB3415 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		87F8F6781D44CBCF00AF8065 /* VITrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VITrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +182,7 @@
 				87F8F6841D44CBCF00AF8065 /* LaunchScreen.storyboard */,
 				87F8F6871D44CBCF00AF8065 /* Info.plist */,
 				875DEC861D4A7B38008F9B15 /* locations.plist */,
+				87AE0AF41E4304800019C1CE /* GoogleService-Info.plist */,
 				875DEC841D4A78B9008F9B15 /* locationDetails.swift */,
 				87B645761D526D5B00EDD356 /* trackDetailsCell.swift */,
 				873986A21D90504100AFBEB0 /* SWRevealViewController */,
@@ -350,6 +355,7 @@
 				875DEC871D4A7B38008F9B15 /* locations.plist in Resources */,
 				87F8F6831D44CBCF00AF8065 /* Assets.xcassets in Resources */,
 				87F8F6811D44CBCF00AF8065 /* Main.storyboard in Resources */,
+				87AE0AF51E4304800019C1CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AE0AF61E4304800019C1CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AE0AF71E4304800019C1CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
