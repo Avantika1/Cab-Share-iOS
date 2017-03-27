@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class allTravellersViewController: UIViewController {
 
@@ -25,6 +27,9 @@ class allTravellersViewController: UIViewController {
     var check: String!
     var selectedDate : String!
     var flag: Int = 0
+    var array = [travellersDetails]()
+    var arr = [[String: AnyObject]]()
+    var arrCopy = [[String: AnyObject]]()
     
     var from : [String] = ["VIT","VIT","Chennai"]
     var to : [String] = ["Chennai","Bangalore","VIT"]
@@ -35,14 +40,16 @@ class allTravellersViewController: UIViewController {
      var toCopy: [String] = []
      var dateCopy: [String] = []
     
-    var myDate : String = "02-01-2017"
-    var myPNR : String = "123"
+    var myDate : String = "21-02-2017"
+    var myPNR : String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
+         let host = hostClass()
+        
+         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -51,6 +58,25 @@ class allTravellersViewController: UIViewController {
         self.segmentedControl.selectedSegmentIndex = 1
         self.homeView.frame = CGRect(x: 0 , y: 0, width: self.mainView.frame.width, height: self.mainView.frame.height)
         self.mainView.addSubview(self.homeView)
+        self.allTravellersTableView.delegate = self;
+        self.allTravellersTableView.dataSource = self;
+
+      
+        Alamofire.request("http://demo0578800.mockable.io/getAllTravellers").responseJSON { (responseData) -> Void in
+            let json = JSON(responseData.result.value!)
+             //print(json)
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                
+                if let resData = swiftyJsonVar["contacts"].arrayObject {
+                    self.arr = resData as! [[String:AnyObject]]
+                }
+              print(self.arr[0])
+             self.allTravellersTableView.reloadData()
+            }
+            
+                  }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,32 +129,26 @@ class allTravellersViewController: UIViewController {
     
     func showSameDate()
     {
-        dateCopy = []
-        fromCopy = []
-        toCopy = []
-        for i in 0...self.date.count-1
+        arrCopy = []
+        for i in 0...self.arr.count-1
         {
-            if(self.date[i] == myDate)
+            var dict = arr[i]
+            if(dict["date"] as? String == myDate)
             {
-                dateCopy.append(self.date[i])
-                fromCopy.append(self.from[i])
-                toCopy.append(self.to[i])
+               arrCopy.append(dict)
             }
         }
         
     }
     func showSamePNR()
     {
-        dateCopy = []
-        fromCopy = []
-        toCopy = []
-        for i in 0...self.from.count-1
+        arrCopy = []
+        for i in 0...self.arr.count-1
         {
-            if(self.PNR[i] == self.myPNR)
+              var dict = arr[i]
+            if(dict["pnr"] as? String == self.myPNR)
             {
-                dateCopy.append(self.date[i])
-                fromCopy.append(self.from[i])
-                toCopy.append(self.to[i])
+               arrCopy.append(dict)
             }
         }
         
@@ -248,20 +268,17 @@ class allTravellersViewController: UIViewController {
     
     @IBAction func searchPressed(_ sender: Any) {
         
-        dateCopy = []
-        fromCopy = []
-        toCopy = []
+        arrCopy = []
        print(selectedDate,date[0])
         print(selectedDate.characters.count, date[0].characters.count)
         
-        for i in 0...self.from.count-1
+        for i in 0...self.arr.count-1
         {
+            var dict = arr[i]
          
-            if(selectedDate == self.date[i] && toButton.titleLabel?.text == self.to[i] && fromButton.titleLabel?.text == self.from[i])
+            if(selectedDate == dict["date"] as? String && toButton.titleLabel?.text == dict["destination"] as? String && fromButton.titleLabel?.text == dict["source"] as? String)
             {
-                dateCopy.append(self.date[i])
-                fromCopy.append(self.from[i])
-                toCopy.append(self.to[i])
+               arrCopy.append(dict)
             }
         
         }
@@ -272,9 +289,7 @@ class allTravellersViewController: UIViewController {
     
     @IBAction func resetPressed(_ sender: Any) {
         
-        dateCopy = date
-        toCopy = to
-        fromCopy = from
+        arrCopy = arr
         flag = 0
         allTravellersTableView.reloadData()
         fromButton.titleLabel?.text = "From"
@@ -301,40 +316,46 @@ extension allTravellersViewController : UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(tableView == sameDateTableView || tableView == sameFlightTableView || flag == 1)
         {
-            return fromCopy.count
+            return arrCopy.count
         }
         else
         {
-            return from.count
+            return arr.count
         }
+        
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        if tableView == self.sameDateTableView || tableView == self.sameFlightTableView || flag == 1{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "travelcell", for: indexPath) as! trackDetails
-            
-            cell.fromLabel.text = fromCopy[indexPath.row]
-            cell.toLabel.text = toCopy[indexPath.row]
-            cell.dateLabel.text = dateCopy[indexPath.row]
-        
-        
-        return cell
-        }
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        else
-        {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: "travelcell", for: indexPath) as! trackDetails
-            
-            cell.fromLabel.text = from[indexPath.row]
-            cell.toLabel.text = to[indexPath.row]
-            cell.dateLabel.text = date[indexPath.row]
+     if tableView == self.sameDateTableView || tableView == self.sameFlightTableView || flag == 1{
+        let cell: trackDetails = tableView.dequeueReusableCell(withIdentifier: "travelcell") as! trackDetails
+        var dict = arrCopy[indexPath.row]
+        cell.toLabel.text = dict["destination"] as? String
+        cell.fromLabel.text = dict["source"] as? String
+        cell.emailLabel.text = dict["email"] as? String
+        cell.dateLabel.text = dict["date"] as? String
+        cell.timeLabel.text = dict["time"] as? String
+        cell.phoneLabel.text = dict["contactNo"] as? String
+    
+        return cell
+    }
+    else
+     {
+       
+            let cell: trackDetails = tableView.dequeueReusableCell(withIdentifier: "travelcell") as! trackDetails
+            var dict = arr[indexPath.row]
+            cell.toLabel.text = dict["destination"] as? String
+            cell.fromLabel.text = dict["source"] as? String
+            cell.emailLabel.text = dict["email"] as? String
+            cell.dateLabel.text = dict["date"] as? String
+            cell.timeLabel.text = dict["time"] as? String
+            cell.phoneLabel.text = dict["contactNo"] as? String
             
             return cell
-        }
-        
+       }
     }
+    
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        return 200
     }

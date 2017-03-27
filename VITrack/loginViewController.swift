@@ -14,6 +14,8 @@ import FacebookCore
 
 class loginViewController: UIViewController, GIDSignInUIDelegate {
     
+    //var user : UserDetails!
+    var name : String!
     
     @IBAction func skipLogin(_ sender: Any) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RevealViewController") as UIViewController
@@ -62,13 +64,14 @@ class loginViewController: UIViewController, GIDSignInUIDelegate {
                 case .success(let graphResponse):
                     if let responseDictionary = graphResponse.dictionaryValue {
                         print(responseDictionary)
-                        
-                        print(responseDictionary["name"])
-                        print(responseDictionary["email"])
-                        
-                        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RevealViewController") as UIViewController
-                        self.present(viewController, animated: false, completion: nil)
-                        
+                        self.name = responseDictionary["name"] as! String!
+                        print(self.name)
+                       //print(responseDictionary["name"])
+                       // print(responseDictionary["email"])
+                        let vc : SWRevealViewController = self.storyboard?.instantiateViewController(withIdentifier: "RevealViewController") as! SWRevealViewController
+                       // let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RevealViewController") as UIViewController
+                        self.present(vc, animated: false, completion: nil)
+                    
                     }
                 }
             }
